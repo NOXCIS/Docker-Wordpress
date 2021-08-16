@@ -34,4 +34,4 @@ volumes:
 networks:
   default:
     external:
-      name: pihole_private_network
+      name: wirehole_private_network
