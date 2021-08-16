@@ -10,7 +10,7 @@ services:
     environment:
       WORDPRESS_DB_HOST: db
       WORDPRESS_DB_USER: exampleuser
-      WORDPRESS_DB_PASSWORD: sm0b0uG9gfZTVKFQ
+      WORDPRESS_DB_PASSWORD: changeme
       WORDPRESS_DB_NAME: exampledb
     volumes:
       - ./wp-ftp:/var/www/html
@@ -23,7 +23,7 @@ services:
     environment:
       MYSQL_DATABASE: exampledb
       MYSQL_USER: exampleuser
-      MYSQL_PASSWORD: sm0b0uG9gfZTVKFQ
+      MYSQL_PASSWORD: changeme
       MYSQL_RANDOM_ROOT_PASSWORD: '1'
     volumes:
       - db:/var/lib/mysql
