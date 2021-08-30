@@ -10,7 +10,13 @@ services:
     environment:
       WORDPRESS_DB_HOST: db
       WORDPRESS_DB_USER: exampleuser
+
+      # ⚠️ Required: ##########################################
+
       WORDPRESS_DB_PASSWORD: changeme # SET DATABASE PASSWORD
+
+      ########################################################
+
       WORDPRESS_DB_NAME: exampledb
     volumes:
       - ./wp-ftp:/var/www/html
@@ -23,7 +29,13 @@ services:
     environment:
       MYSQL_DATABASE: exampledb
       MYSQL_USER: exampleuser
+
+      # ⚠️ Required: ###############################################################
+
       MYSQL_PASSWORD: changeme # SET DATABASE PASSWORD USE SAME PASSWORD FOR BOTH
+
+      #############################################################################
+      
       MYSQL_RANDOM_ROOT_PASSWORD: '1'
     volumes:
       - db:/var/lib/mysql
